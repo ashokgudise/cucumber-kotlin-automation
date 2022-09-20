@@ -5,7 +5,6 @@ import com.ashok.demos.automation.page.SearchPage
 import io.cucumber.java.en.Given
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 
 
@@ -27,7 +26,7 @@ class SearchSteps {
         searchPage?.searchForMyName(name)
     }
 
-    @Then("I verify invalid login message")
+    @Then("verify the name appears from my LinkedIn Profile")
     fun verifyMyNameFromLinkedIn(){
         searchPage?.verifyMyNameInSearchResults()
     }
